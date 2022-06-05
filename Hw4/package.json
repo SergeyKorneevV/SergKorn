@@ -1,0 +1,24 @@
+{
+  "name": "sergkorn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergeyKorneevV/SergKorn.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SergeyKorneevV/SergKorn/issues"
+  },
+  "homepage": "https://github.com/SergeyKorneevV/SergKorn#readme",
+  "dependencies": {
+    "fs-extra": "^10.1.0",
+    "node": "^17.7.2",
+    "nodejs": "^0.0.0"
+  }
+}
