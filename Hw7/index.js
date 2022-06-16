@@ -17,7 +17,7 @@ if (sum1===sum2) {console.log("Ничья!!!")}
 
 // 2) Подсчитать как много Пятниц 13-го было с 01/01/2000 до сегодня.
 let count = 0;
-let d_start = new Date(2020,0,1) 
+let d_start = new Date(2000,0,1) 
 let year= d_start.getFullYear();
 while (year<=new Date().getFullYear()) {
     for (let month=0; month<12; month++) {
