@@ -43,12 +43,12 @@ function findPos (vol1, vol2) {
    let arr1 = Array.from('' + vol1)
    let arr2 = Array.from('' + vol2)
    for (i = 0; i < 4; i++){
-    if (arr1[i] == arr2[i])
+    if (arr1[i] === arr2[i])
     	count1 ++
   } 
   for (j = 0 ; j < 4; j++)
    for (z = 0; z < 4; z++)
-      if(arr1[j] == arr2[z])
+      if(arr1[j] === arr2[z])
    count2++
  return [count1, count2]}
 console.log (findPos(1234, 1235))
@@ -57,7 +57,7 @@ console.log (findPos(1234, 1235))
 let arrNumbers = new Array (50,4,1,76,20,3,27,5,501);
 function compareNumbers(n1,n2)
 {
-  if (n1==n2) return 0
+  if (n1===n2) return 0
   if (n1>n2)
     return 1
   else 
