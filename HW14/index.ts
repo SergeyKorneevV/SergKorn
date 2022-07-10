@@ -86,12 +86,6 @@ export class ObjectManipulator<T> {
         return this.obj;
     }
 }
-// const obj1 = new ObjectManipulator({ a: 1, b: 2})
-// const obj2 = obj1.set('a',  'one')
-// const obj3 = obj2.delete('one')
-// console.log(obj1)
-// console.log(obj2)
-// console.log(obj3)
 
 // 4. Обеспечьте правильную типизацию для указанных функций.
 /**
