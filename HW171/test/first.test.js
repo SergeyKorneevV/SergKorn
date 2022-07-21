@@ -17,7 +17,7 @@ await driver.sleep(2000);
 const fieldSearch = await driver.findElement(By.xpath('//*[@class="whsOnd zHQkBf"]'));
 await fieldSearch.sendKeys('Driver');
 await driver.actions().sendKeys(Key.ENTER).perform();
-const findFirstLinkDrivers = await driver.findElement(By.css('#yDmH0d > div:nth-child(1)'))
+const findFirstLinkDriver = await driver.findElement(By.css('#yDmH0d > div:nth-child(1)'))
 await driver.sleep(4000);
 await driver.close();
 })
