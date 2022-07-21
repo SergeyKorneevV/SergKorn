@@ -1,8 +1,8 @@
 require('chromedriver');
 const { Builder, By, Key } = require('selenium-webdriver');
 const driver = new Builder().forBrowser('chrome').setChromeOptions('fullscreen').build();
-describe(`new tests`, function() {
-    it(`new test`, async () => {
+describe(`Test some functionality website chromedriver.chromium.org site`, function() {
+    it(`Homework tast`, async () => {
 await driver.manage().window().maximize();
 await driver.get('https://chromedriver.chromium.org/home');
 const findTextChrDr = await driver.findElement(By.xpath('//*[@class=" Rn3Z1b"]'))
