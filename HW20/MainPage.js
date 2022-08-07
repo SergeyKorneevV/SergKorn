@@ -22,8 +22,5 @@ class MainPage extends BasePage {
         this.searchFieldWindow.setValue(value)
         this.findLink.click()
     }
-    searchFieldDisplay () {
-        this.jogoButton.waitForClickable();
-    }
 }
 module.exports = { MainPage };
