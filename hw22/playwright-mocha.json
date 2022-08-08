@@ -1,0 +1,22 @@
+{
+    "browser": "chrome",
+    "testFilesBaseDir": "./testMocha",
+    "playwrightLaunchOptions": {
+      "headless": false
+    },
+    "playwrightContextOptions": {
+  
+      "viewport": {
+        "width": 1600,
+        "height": 1000
+      },
+      "recordVideo": {
+        "dir": "video"
+      }
+    },
+    "mochaOptions": {
+      "timeout": 30000,
+      "require": ["node_modules/playwright-mocha/dist/hooks.js"],
+      "parallel": true
+    }
+  }
