@@ -2,7 +2,6 @@ const mainPage = require('../pageObjects/mainPage');
 describe('Tests main page', () =>{
     beforeEach(() => {
         cy.visit('https://www.amd.by/')
-        cy.viewport(1920, 1080)
     })
     it('should title contain text - Бытовая, компьютерная, цифровая -', () =>{
         cy.title().should('include', 'Бытовая, компьютерная, цифровая')
