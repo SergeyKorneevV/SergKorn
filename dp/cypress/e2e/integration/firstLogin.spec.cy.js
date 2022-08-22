@@ -13,11 +13,11 @@ describe('Tests Login', () =>{
     })
     it('should be error Login by email', () =>{
         loginPage.logInInput('levesal889@upshopt.co', '123456')
-        loginPage.invalidTextLogin().should('have.text', 'Неправильно заполнены поля E-Mail и/или пароль!')
+        loginPage.invalidTextLogin().should('have.text', ' Неправильно заполнены поля E-Mail и/или пароль!')
     })
     it('should be error Login by password', () =>{
         loginPage.logInInput('levesal889@upshopt.com', '12345')
-        loginPage.invalidTextLogin().should('have.text', 'Неправильно заполнены поля E-Mail и/или пароль!')
+        loginPage.invalidTextLogin().should('have.text', ' Неправильно заполнены поля E-Mail и/или пароль!')
     })
     it('should be notification Forgot password', () =>{
         loginPage.preLogin()
