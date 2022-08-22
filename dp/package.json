@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx cypress open",
+    "cy:run": "cypress run",
+    "cy:parallel": "cypress-parallel -s cy:run -t 2 -d ./cypress/e2e/integration/",
+    "cy:parallel:many": "cypress-parallel -s cy:run -t 4 -d ./cypress/e2e/integration/"
   },
   "author": "",
   "license": "ISC",
