@@ -4,7 +4,7 @@ describe('Tests cart page', () =>{
         cy.visit('https://www.amd.by/')
         cy.viewport(1920, 1080)
     })
-    it.skip('should item add to cart', () =>{
+    it('should item add to cart', () =>{
         cartPage.addToCart()
         cartPage.cartResultText().should('have.text', ' Товар Офисная бумага SvetoCopy A4 (80 г/м2) добавлен в вашу корзину! ×')
     })
