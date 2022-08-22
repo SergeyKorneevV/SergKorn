@@ -2,7 +2,6 @@ const cartPage = require('../pageObjects/cartPage');
 describe('Tests cart page', () =>{
         beforeEach(() => {
         cy.visit('https://www.amd.by/')
-        cy.viewport(1920, 1080)
     })
     it('should item add to cart', () =>{
         cartPage.addToCart()
