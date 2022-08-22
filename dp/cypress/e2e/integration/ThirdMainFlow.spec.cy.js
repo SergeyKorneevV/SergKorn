@@ -3,7 +3,6 @@ const pageComponents = require('../pageObjects/pageComponents');
 describe('Tests main flow', () =>{
         beforeEach(() => {
         cy.visit('https://www.amd.by/')
-        cy.viewport(1920, 1080)
     })
     it('should not be disabled knowAboutLowPriceButton', () =>{
         pageComponents.findProduct('Офисная бумага SvetoCopy')
